@@ -7,8 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
  import { HomeComponent } from './components/home/home.component';
  import { CivilizacionesComponent } from './components/civilizaciones/civilizaciones.component';
  import { ActividadesComponent } from './components/actividades/actividades.component';
- import { EvaluacionesComponent } from './components/evaluaciones/evaluaciones.component'
-
+ import { EvaluacionesComponent } from './components/evaluaciones/evaluaciones.component';
 
 
 
@@ -17,7 +16,9 @@ const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},
   {path: "home", component: HomeComponent},
   {path: "civilizaciones", component: CivilizacionesComponent},{path: "actividades", component: ActividadesComponent},
-  {path: "evaluaciones", component: EvaluacionesComponent}
+  {path: "evaluaciones", component: EvaluacionesComponent},
+  
+
 ];
 
 @NgModule({
