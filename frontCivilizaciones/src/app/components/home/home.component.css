@@ -1,0 +1,32 @@
+
+.cards{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cardRow{
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.cardContent{
+    max-width: 100%;
+    justify-content: center;
+    
+}
+
+.card{
+
+    height: 400px;
+    text-align: center;   
+    justify-content: center;
+    
+}
+
+.imgCard{
+    width:100%;
+    height:auto;
+    max-height: 220px;
+}
+
