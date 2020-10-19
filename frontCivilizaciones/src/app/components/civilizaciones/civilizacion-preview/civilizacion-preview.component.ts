@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {CivilizacionesService } from '../../../services/civilizaciones.service'
 
-
+import { Civilizacion } from '../../../models/civilizacion.model'
 
 @Component({
   selector: 'app-civilizacion-preview',
