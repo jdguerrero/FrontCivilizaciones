@@ -1,1 +1,21 @@
 <p>civilizacion-preview works!</p>
+
+<div class="row">  
+
+
+    <div class="col-md-4 p-4" *ngFor="let civ of listCivilizaciones ">
+        <!--Se agrega cada tarjeta con su css-->
+        
+            <div class="card text-center" style="width: 18rem;">
+                <img src="https://www.absolutviajes.com/wp-content/uploads/2010/10/Telamones_Tula_01-2-830x623.jpg" class="card-img-top imgCard" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{civ.idCivilizacion}}</h5>
+                  <br>
+                  <p class="card-text">{{civ.nombreCivilizacion}}</p>
+                  <a href="/evaluaciones" class="btn btn-primary">Ver Civilización</a>
+                </div>
+              </div>
+          
+    </div>
+
+</div>
