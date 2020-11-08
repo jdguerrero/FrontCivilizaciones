@@ -1,7 +1,7 @@
 <p>civilizacion-preview works!</p>
 
 <div class="container">
-  <div class="row" *ngFor="let civ of listCivilizaciones ">  
+  <div class="row" *ngFor="let civ of listCivilizaciones, index as i">  
     <div class="col-md-6 p-4" >
         <!--Se agrega cada tarjeta con su css-->
         
@@ -11,7 +11,7 @@
                   <h5 class="card-title">{{civ.idCivilizacion}}</h5>
                   <br>
                   <p class="card-text">{{civ.nombreCivilizacion}}</p>
-                  <a href="/evaluaciones" class="btn btn-primary">Ver Civilización</a>
+                  <a [routerLink]="['/civilizacion',(i+1)]" class="btn btn-primary">Ver Civilización</a>
                 </div>
               </div>
           

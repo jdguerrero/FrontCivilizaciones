@@ -9,6 +9,11 @@ import { Routes, RouterModule } from '@angular/router';
  import { ActividadesComponent } from './components/actividades/actividades.component';
  import { EvaluacionesComponent } from './components/evaluaciones/evaluaciones.component';
 
+ // Civilizaciones sub components
+ import { CivilizacionComponent } from './components/civilizaciones/civilizacion/civilizacion.component';
+ import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/estilos-vida/estilos-vida.component';
+
+
 
 
 
@@ -17,6 +22,9 @@ const routes: Routes = [
   {path: "home", component: HomeComponent},
   {path: "civilizaciones", component: CivilizacionesComponent},{path: "actividades", component: ActividadesComponent},
   {path: "evaluaciones", component: EvaluacionesComponent},
+
+  {path: "civilizacion/:id", component: CivilizacionComponent},
+  {path: "estilos-vida", component: EstilosVidaComponent},
   
 
 ];

@@ -25,6 +25,22 @@ export class CivilizacionesService {
     });
   }
 
+  getCivilizacionById(id: number):Observable <any> {
+
+    let headers = new HttpHeaders().set(
+      'Type-Content','aplication/json'
+    )
+
+    let route = this._urlApiCivilizaciones+id;
+
+    return this.http.get(route, {
+      headers: headers
+    });
+
+    
+
+  }
+
 
 
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {CivilizacionesService } from '../../../services/civilizaciones.service';
+import { ActivatedRoute } from '@angular/router';
+import { Civilizacion } from '../../../models/civilizacion.model';
 
 @Component({
   selector: 'app-civilizacion',
@@ -7,9 +10,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CivilizacionComponent implements OnInit {
 
-  constructor() { }
+  civilizacion: Civilizacion;
+  id : number;
+  
+  
+  constructor(
+    private ruta:ActivatedRoute,
 
-  ngOnInit(): void {
+    private civilizacionesService: CivilizacionesService
+  ) {
+  
+    this.civilizacion = new Civilizacion();
+    this.ruta.params.subscribe(params=>{
+      console.log(params['id'])
+
+      this.id = params['id'];
+
+        
+   })
   }
 
+
+  ngOnInit(): void {
+
+    this.civilizacionesService.getCivilizacionById(this.id).subscribe(Response=>{
+
+      this.civilizacion =  Response;
+    });
+  }
+
+ 
 }

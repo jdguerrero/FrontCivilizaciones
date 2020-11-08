@@ -20,6 +20,7 @@ import { CivilizacionComponent } from './components/civilizaciones/civilizacion/
  */
 
 import { HttpClientModule } from '@angular/common/http';
+import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/estilos-vida/estilos-vida.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     ActividadesComponent,
     EvaluacionesComponent,
     CivilizacionPreviewComponent,
-    CivilizacionComponent
+    CivilizacionComponent,
+    EstilosVidaComponent
   ],
   imports: [
     BrowserModule,
