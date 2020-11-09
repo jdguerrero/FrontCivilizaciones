@@ -1,35 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-
-import {CivilizacionesService } from '../../../services/civilizaciones.service';
+import { Input } from '@angular/core';
 
 import { Civilizacion } from '../../../models/civilizacion.model';
+
 
 @Component({
   selector: 'app-civilizacion-preview',
   templateUrl: './civilizacion-preview.component.html',
   styleUrls: ['./civilizacion-preview.component.css']
 })
+
 export class CivilizacionPreviewComponent implements OnInit {
 
-  listCivilizaciones: Array<any>;
+  @Input ()
+  civilizacion: Civilizacion;
 
-  constructor(private civilizacionesService: CivilizacionesService) {
+
+  constructor() {
     
-    this.listCivilizaciones = new Array<any>();
 
    }
 
-  ngOnInit(): void {
+  ngOnInit():void{
 
-    this.civilizacionesService.getCivilizaciones().subscribe(Response=>{
-
-    const listJson = Response;
-
-    this.listCivilizaciones = listJson["data"];
-
-    console.log(this.listCivilizaciones);
-
-    });
+    
   }
 
 }
+

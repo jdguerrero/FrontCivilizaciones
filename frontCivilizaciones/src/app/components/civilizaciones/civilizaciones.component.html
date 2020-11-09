@@ -1,3 +1,13 @@
 <p>civilizaciones works!</p>
 
-<app-civilizacion-preview></app-civilizacion-preview>
+<div class="container">
+    <div class="row" *ngFor="let civilizacion of listCivilizaciones">  
+      <div class="col-md-6 p-4" >
+          <app-civilizacion-preview [civilizacion] = "civilizacion"></app-civilizacion-preview>    
+      </div>
+  
+  </div>
+</div>
+
+
+
