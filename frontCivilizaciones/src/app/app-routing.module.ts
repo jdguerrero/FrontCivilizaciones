@@ -24,13 +24,10 @@ const routes: Routes = [
   {path: "civilizaciones", component: CivilizacionesComponent},
   {path: "actividades", component: ActividadesComponent},
   {path: "evaluaciones", component: EvaluacionesComponent},
-<<<<<<< Updated upstream
 
   {path: "civilizacion/:id", component: CivilizacionComponent},
   {path: "estilos-vida", component: EstilosVidaComponent},
-=======
   {path: "religiones", component: ReligionesComponent}
->>>>>>> Stashed changes
   
 
 ];
