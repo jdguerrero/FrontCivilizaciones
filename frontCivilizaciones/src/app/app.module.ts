@@ -20,7 +20,12 @@ import { CivilizacionComponent } from './components/civilizaciones/civilizacion/
  */
 
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< Updated upstream
 import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/estilos-vida/estilos-vida.component';
+=======
+import { ReligionesComponent } from './components/civilizaciones/civilizaciones/religiones/religiones.component';
+import { EstiloViadComponent } from './components/civilizaciones/civilizacion/estilo-viad/estilo-viad.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/e
     EvaluacionesComponent,
     CivilizacionPreviewComponent,
     CivilizacionComponent,
+<<<<<<< Updated upstream
     EstilosVidaComponent
+=======
+    ReligionesComponent,
+    EstiloViadComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
