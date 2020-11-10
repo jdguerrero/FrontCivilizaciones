@@ -1,0 +1,14 @@
+.mu{
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .mu{
+        margin-left: 20%;
+    }
+    
+  }

@@ -12,8 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { CivilizacionesComponent } from './components/civilizaciones/civilizaciones.component';
 import { ActividadesComponent } from './components/actividades/actividades.component';
 import { EvaluacionesComponent } from './components/evaluaciones/evaluaciones.component';
-
 import { CivilizacionComponent } from './components/civilizaciones/civilizacion/civilizacion.component';
+import { CivilizacionPreviewComponent } from './components/civilizaciones/civilizacion-preview/civilizacion-preview.component';
 
 /**
  * imports
@@ -31,7 +31,8 @@ import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/e
     ActividadesComponent,
     EvaluacionesComponent,  
     CivilizacionComponent,
-    EstilosVidaComponent
+    EstilosVidaComponent,
+    CivilizacionPreviewComponent
   ],
   imports: [
     BrowserModule,
