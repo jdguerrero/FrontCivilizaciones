@@ -11,7 +11,7 @@ export class CivilizacionesService {
 
   constructor(private http: HttpClient) {
 
-    this._urlApiCivilizaciones = "/api/civilizaciones/";
+    this._urlApiCivilizaciones = "https://back--civilizaciones.herokuapp.com/api/civilizaciones/";
 
   }
 

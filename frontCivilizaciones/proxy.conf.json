@@ -1,6 +1,6 @@
 {
     "/api/*":{
-        "target": "http://54.163.220.71:3000/",
+        "target": "https://back--civilizaciones.herokuapp.com/",
         "secure": false,
         "logLevel": "debug"
     }
