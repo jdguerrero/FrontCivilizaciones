@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ReligionesService } from '../../../../services/religiones.service';
+import { Religion } from '../../../../models/religion.model';
 
 @Component({
   selector: 'app-religiones',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReligionesComponent implements OnInit {
 
-  constructor() { }
+  religion : Religion;
 
-  ngOnInit(): void {
+  id: number;
+
+  constructor(private ruta:ActivatedRoute, private religionesService: ReligionesService){
+    this.religion = new Religion();
+
+
+    this.ruta.params.subscribe(params=>{
+
+      console.log(params['id'])
+
+      this.id = params['id'];
+ 
+   });
+   
   }
 
+  ngOnInit(): void {
+
+    this.religionesService.getReligionById(this.id).subscribe(Response=>{
+
+      this.religion =  Response;
+    });
+
+  }
 }
