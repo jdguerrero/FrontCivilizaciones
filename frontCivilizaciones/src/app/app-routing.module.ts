@@ -26,9 +26,9 @@ const routes: Routes = [
   {path: "evaluaciones", component: EvaluacionesComponent},
   {path: "civilizacion/:id", component: CivilizacionComponent},
   {path: "estiloVida/:id", component: EstilosVidaComponent},
-  {path: "arte/:idArte", component: ArteComponent},
-  {path: "ubicacion/:idUbicacion", component: UbicacionComponent},
-  {path: "religion/:idreligion", component: ReligionesComponent},
+  {path: "arte/:id", component: ArteComponent},
+  {path: "ubicacion/:id", component: UbicacionComponent},
+  {path: "religion/:id", component: ReligionesComponent},
   
 
 ];
