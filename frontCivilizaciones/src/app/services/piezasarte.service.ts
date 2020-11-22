@@ -5,17 +5,17 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ArtesService {
+export class PiezasArteService {
 
   _urlApiCivilizaciones: string;
 
     constructor(private http: HttpClient) {
 
-      this._urlApiCivilizaciones = "https://back--civilizaciones.herokuapp.com/api/arte/";
+      this._urlApiCivilizaciones = "https://back--civilizaciones.herokuapp.com/api/piezaarte/";
 
     }
 
-    getArtes(): Observable <any> {
+    getPiezasArte(): Observable <any> {
 
       let headers = new HttpHeaders().set(
         'Type-Content','aplication/json'
@@ -25,7 +25,7 @@ export class ArtesService {
       });
     }
 
-    getArteById(id: number):Observable <any> {
+    getPiezaArteById(id: number):Observable <any> {
 
       let headers = new HttpHeaders().set(
         'Type-Content','aplication/json'
