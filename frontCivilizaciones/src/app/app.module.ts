@@ -21,6 +21,8 @@ import { CivilizacionPreviewComponent } from './components/civilizaciones/civili
 
 import { HttpClientModule } from '@angular/common/http';
 import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/estilos-vida/estilos-vida.component';
+import { ArteComponent } from './components/civilizaciones/civilizacion/arte/arte.component';
+import { UbicacionComponent } from './components/civilizaciones/civilizacion/ubicacion/ubicacion.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/e
     EvaluacionesComponent,  
     CivilizacionComponent,
     EstilosVidaComponent,
-    CivilizacionPreviewComponent
+    CivilizacionPreviewComponent,
+    ArteComponent,
+    UbicacionComponent
   ],
   imports: [
     BrowserModule,

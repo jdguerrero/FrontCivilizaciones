@@ -13,8 +13,8 @@ import { Routes, RouterModule } from '@angular/router';
  // Civilizaciones sub components
  import { CivilizacionComponent } from './components/civilizaciones/civilizacion/civilizacion.component';
  import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/estilos-vida/estilos-vida.component';
-
-
+ import { ArteComponent } from './components/civilizaciones/civilizacion/arte/arte.component';
+ import { UbicacionComponent } from './components/civilizaciones/civilizacion/ubicacion/ubicacion.component';
 
 
 
@@ -25,8 +25,10 @@ const routes: Routes = [
   {path: "actividades", component: ActividadesComponent},
   {path: "evaluaciones", component: EvaluacionesComponent},
   {path: "civilizacion/:id", component: CivilizacionComponent},
-  {path: "estilos-vida", component: EstilosVidaComponent},
-  {path: "religiones", component: ReligionesComponent}
+  {path: "estilos-vida/:idEstilovida", component: EstilosVidaComponent},
+  {path: "arte/:idArte", component: ArteComponent},
+  {path: "ubicacion/:idUbicacion", component: UbicacionComponent},
+  {path: "religion/:idreligion", component: ReligionesComponent},
   
 
 ];
