@@ -23,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { EstilosVidaComponent } from './components/civilizaciones/civilizacion/estilos-vida/estilos-vida.component';
 import { ArteComponent } from './components/civilizaciones/civilizacion/arte/arte.component';
 import { UbicacionComponent } from './components/civilizaciones/civilizacion/ubicacion/ubicacion.component';
+import { PintarComponent } from './components/actividades/pintar/pintar.component';
+import { QuizComponent } from './components/evaluaciones/quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { UbicacionComponent } from './components/civilizaciones/civilizacion/ubi
     EstilosVidaComponent,
     CivilizacionPreviewComponent,
     ArteComponent,
-    UbicacionComponent
+    UbicacionComponent,
+    PintarComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
