@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: "actividades", component: ActividadesComponent},
   {path: "evaluaciones", component: EvaluacionesComponent},
   {path: "civilizacion/:id", component: CivilizacionComponent},
-  {path: "estilos-vida/:idEstilovida", component: EstilosVidaComponent},
+  {path: "estiloVida/:id", component: EstilosVidaComponent},
   {path: "arte/:idArte", component: ArteComponent},
   {path: "ubicacion/:idUbicacion", component: UbicacionComponent},
   {path: "religion/:idreligion", component: ReligionesComponent},
