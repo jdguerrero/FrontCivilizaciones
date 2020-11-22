@@ -4,6 +4,8 @@ export class Civilizacion {
 
     nombreCivilizacion: string;
 
+    imagenCivilizacion: string;
+
     idReligion: number;
 
     idUbicacion: number;
