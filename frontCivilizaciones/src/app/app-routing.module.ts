@@ -19,6 +19,8 @@ import { UbicacionComponent } from './components/civilizaciones/civilizacion/ubi
 // Evaluaciones sub components
 import { QuizComponent} from './components/evaluaciones/quiz/quiz.component';
 
+import { RompecabezasComponent } from './components/actividades/rompecabezas/rompecabezas.component';
+
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -34,6 +36,8 @@ const routes: Routes = [
   // Evaluaciones
   { path: "evaluaciones", component: EvaluacionesComponent },
   { path: "evaluaciones/quiz/:id", component: QuizComponent },
+  { path: "rompecabezas", component: RompecabezasComponent }
+
 
 ];
 

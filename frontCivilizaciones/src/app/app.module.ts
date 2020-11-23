@@ -25,6 +25,7 @@ import { ArteComponent } from './components/civilizaciones/civilizacion/arte/art
 import { UbicacionComponent } from './components/civilizaciones/civilizacion/ubicacion/ubicacion.component';
 import { PintarComponent } from './components/actividades/pintar/pintar.component';
 import { QuizComponent } from './components/evaluaciones/quiz/quiz.component';
+import { RompecabezasComponent } from './components/actividades/rompecabezas/rompecabezas.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { QuizComponent } from './components/evaluaciones/quiz/quiz.component';
     ArteComponent,
     UbicacionComponent,
     PintarComponent,
-    QuizComponent
+    QuizComponent,
+    RompecabezasComponent
   ],
   imports: [
     BrowserModule,
