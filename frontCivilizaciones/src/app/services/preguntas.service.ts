@@ -38,4 +38,19 @@ export class PreguntasService {
       });
   
     }
+
+    getPreguntasByBanco(id: number): Observable <any> {
+
+      let route = this._urlApiPregunta+ "byBanco/" + id;
+
+      let headers = new HttpHeaders().set(
+        'Type-Content','aplication/json'
+      )
+      return this.http.get(route, {
+        headers: headers
+      });
+    }
+    
+
+
 }
