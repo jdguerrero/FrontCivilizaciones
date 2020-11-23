@@ -33,7 +33,7 @@ const routes: Routes = [
   { path: "actividades", component: ActividadesComponent },
   // Evaluaciones
   { path: "evaluaciones", component: EvaluacionesComponent },
-  { path: "evaluaciones/quiz", component: QuizComponent },
+  { path: "evaluaciones/quiz/:id", component: QuizComponent },
 
 ];
 

@@ -1,2 +1,22 @@
-<p>evaluaciones works!</p>
-<a href="/evaluaciones/quiz" class="btn btn-primary">Presentar quiz</a>
+
+<div class="container">
+    <div class="row" >  
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let banco of bancosPreguntas">
+            
+        <div class="card">
+            <div class="card-header">
+              Quiz Civilizaciónes
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Civilización {{ banco.nombreBancoPreguntas }}</h4>
+              
+              <p class="card-text">Prueba que tanto has aprendido sobre los diferentes aspectos de la civilizacion de {{ banco.nombreBancoPreguntas }}</p>
+              <a href="/evaluaciones/quiz/{{banco.idBancoPreguntas}}" class="btn btn-primary">Ir al Quiz</a>
+            </div>
+        </div>
+
+
+      </div>
+  
+  </div>
+</div>
